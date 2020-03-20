@@ -106,6 +106,7 @@ counter = 0
     while counter < source.size do
     director_info = source[counter]
     name = director_info[:name]
+<<<<<<< HEAD
     movie = director_info[:movies]
 
     results << movies_with_director_key(name, movie)
@@ -113,6 +114,13 @@ counter = 0
     end
 
 results
+=======
+    movie = director_info[:movie]
+
+    results << [name, movie]
+    end
+counter += 1
+>>>>>>> 863b02879465cfa71d9cdf51f25aaa7e112ae3a6
 end
 
 # ----------------    End of Your Code Region --------------------
